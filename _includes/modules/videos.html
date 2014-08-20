@@ -1,0 +1,9 @@
+      <ul class="box-list box-list-video">
+        {% for video in {{site.data.youtube}} %}
+        <li><a href="{{ video.link }}" data-toggle="lightbox" data-gallery="videos" data-title="{{ video.title | truncatewords: 8 }}" >
+        <figure>
+          <div class="widethumb img" style="background-image: url({{ video.thumbnail }})"></div>
+          <div class="label label-default">{{ video.duration }}</div>
+        </figure>
+        <h3>{{ video.title }}</h3></a>{% endfor %}
+      </ul>

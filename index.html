@@ -1,0 +1,64 @@
+---
+layout: default
+title: The official website 
+---
+  <div id="home" class="banner" style="background-image: url(images/banner.jpg)"></div>
+  <div class="grey section">
+    <div class="container">
+      <div class="row" id="bio">
+        <div class="col-md-8">
+          <div class="page-header">
+            <h2>D-Minus Official</h2>
+          </div>
+          <p class="lead">Welcome to dminusmusic.com, the official site of D-Minus.</p>
+          <div class="don-share" data-style="icons">
+            <div class="don-share-total"></div>
+            <div class="don-share-facebook"></div>
+            <div class="don-share-twitter"></div>
+            <div class="don-share-google"></div>
+            <div class="don-share-linkedin"></div>
+            <div class="don-share-pinterest"></div>
+            <div class="don-share-stumbleupon"></div>
+            <div class="don-share-reddit"></div>
+          </div>
+          <script type="text/javascript">
+            (function() {
+              var dr = document.createElement('script');
+              dr.type = 'text/javascript'; dr.async = true;
+              dr.src = 'http://share.donreach.com/buttons.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dr);
+            })();
+          </script>
+          <h3>About D-Minus</h3>
+          <p>Rapper, Singer, Producer, Songwriter; just some of the talents D-Minus brings to the table. With exciting connections to thousands of fans, partners and industry experts located in New York, Los Angeles, Paris and Australia; D-Minus has had the honour to open major concerts for artists such as Andy Montañez, El gran combo de Puerto Rico, Julio Voltio, Ñejo and Dalmata, Joel and Randy, Reykon, Don Omar, Nicky Jam, Magic Juan, Joe "RnB", Boys to Men, J
+          Balvin and Bone Thugs and Harmony.</p>
+          <p>D-Minus is now ready to take centre stage and gaining fast recognition as the next break through artist of the year with his latest song "LA RUMBA" which is set to take the industry by storm.</p>
+          <p>This amazing talent and versatile style on offer is ready to hit music world internationally! Keep up to date with everything D-Minus and follow his path to the top.</p>
+        </div>
+        <div class="col-md-4">
+        {% if {{site.data.reverbnation}} %}
+        <section>
+          <div class="page-header">
+            <h2>Tour</h2>
+          </div>
+          <ul class="media-list">
+            <li style="list-style: none">{% capture i %}0{% endcapture %} {% for event in {{site.data.reverbnation}} %} {% if {{i}} < "3" %}</li>
+            <li class="media">
+            <span class="datebox pull-left" style="margin-top: 3px;">{{ event.date | date: "%-d" }}
+            <small class="btn-danger">{{ event.date | date: "%b" }}</small></span>
+            <div class="media-body">
+              <h3 class="media-heading">{{ event.venue }}</h3>
+              <p class="lead">{{ event.location }}</p>
+            </div>{% capture i %}{{ i | plus:1 }}{% endcapture %} {% endif %} {% endfor %}</li>
+          </ul>
+        </section>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include module.html module="videos" title="Videos" %} 
+  {% include module.html module="photos" title="Photos" class="grey" %} 
+  {% include module.html module="connect" title="Connect" %}
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>

@@ -1,0 +1,8 @@
+      <ul class="box-list box-list-photo">
+        {% for photo in {{site.data.instagram}} %}
+        <li><a class="thumbnail" href="{{ photo.link }}" data-toggle="lightbox" data-gallery="photos" data-title="{{ photo.title | truncatewords: 8 }}">
+        <figure>
+          <div class="squarethumb img" style="background-image: url({{ photo.image }})"></div>
+          <figcaption>{{ photo.title | truncatewords: 8 }}</figcaption>
+        </figure></a>{% endfor %}
+      </ul>

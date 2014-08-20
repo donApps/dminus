@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="{{ site.author }}" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | remove:"index.html" }}"/>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar-inverse">
+  <div class="navbar navbar-inverse affix-top" role="navigation" data-spy="affix" data-offset-top="79">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+      </button> 
+      <a class="navbar-brand brand-small" href="#home">
+        <img src="images/logo_small.png" alt="{{ site.title }}" />
+      </a> 
+      <a class="navbar-brand brand-big" href="#home">
+        <img src="images/logo.png" alt="{{ site.title }}" />
+      </a></div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#bio">Bio</a>
+          </li>
+          <li>
+            <a href="#videos">Videos</a>
+          </li>
+          <li>
+            <a href="#photos">Photos</a>
+          </li>
+          <li>
+            <a href="#connect">Connect</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  {{content}}
+  <footer>
+    <div class="container">
+      <p class="text-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></p>
+    </div>
+  </footer>
+  <script src="/assets/js/app.js"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53646353-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
