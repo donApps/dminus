@@ -299,3 +299,6 @@ body>footer {
 .social-icons {
     margin-top:32px;
 }
+.social-icons a {
+    margin:0 5px;
+}
