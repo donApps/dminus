@@ -274,6 +274,7 @@ body>footer {
     text-align: center;
     color: #fff;
     border: 15px solid #fff;
+    opacity: 0.7;
 }
 .play-video::before {
     content: "\25b6";
@@ -284,6 +285,7 @@ body>footer {
     color: #f00;
     border-color: #f00;
     text-decoration: none;
+    opacity: 1;
 }
 .banner-bottom {
     background: rgba(255,255,255,0.5);
@@ -294,13 +296,6 @@ body>footer {
     height: 160px;
     padding: 15px 0;
 }
-.social-icons a {
-    color: #000;
-}
-.social-icons a:hover {
-    color: #f00;
-}
 .social-icons {
-    font-size: 5em;
     margin-top:15px;
 }
