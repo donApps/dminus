@@ -256,3 +256,24 @@ body>footer {
 .grey {
     background-color: #f0f0f0;
 }
+
+
+.play-video {
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
+    content: "\25b6";
+    line-height: 70px;
+    font-size: 5em;
+    background: rgba(255,255,255,0.1);
+    width:90px;
+    height:90px;
+    margin-left:-45px;
+    margin-top:-45px;
+    left:50%;
+    top:50%;
+    border-radius:100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    color:#fff;
+    opacity:0;
+}
